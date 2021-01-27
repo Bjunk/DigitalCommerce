@@ -122,14 +122,6 @@ $di->setShared('router', function () {
         Router::URI_SOURCE_SERVER_REQUEST_URI
     );
 
-    $router->add(
-    '/{language:[a-z]{2}}-{country:[A-Z]{2}}/',
-    [
-        'controller' => 'index',
-        'action'     => 'index',
-    ]
-);
-
     return $router;
 });
 
@@ -150,16 +142,16 @@ $di->set(
                 switch ($exception->getCode()) {
                     case PhDispatcher::EXCEPTION_HANDLER_NOT_FOUND:
                     case PhDispatcher::EXCEPTION_ACTION_NOT_FOUND:
-                        /*$dispatcher->forward(
+                       /* $dispatcher->forward(
                             array(
                                 'controller' => 'error',
                                 'action'     => 'show404',
                             )
-                        );*/
+                        ); */
                         return false; 
 			break;
 		    default:
-            		/*$dispatcher->forward(array(
+            		 /* $dispatcher->forward(array(
                 		'controller' => 'error',
                 		'action' => 'show500',
 			)); */

@@ -1,0 +1,118 @@
+      <!-- Page Content-->
+      <main class="page-content">
+        <!-- Breadcrumbs & Page title
+        <section class="text-center section-34 section-sm-60 section-md-top-100 section-md-bottom-105 bg-image bg-image-breadcrumbs">
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col-xs-12 col-xl-preffix-1 col-xl-11">
+                <p class="h3 text-white">Contacts</p>
+                <ul class="breadcrumbs-custom offset-top-10">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active">Contacts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>-->
+        <section class="text-center text-sm-left section-50 section-sm-top-100 section-sm-bottom-100">
+          <div class="container">
+            <div class="row justify-content-xs-center">
+              <div class="col-md-8">
+                <h4 class="font-default text-center">Contactanos</h4>
+                <p class="text-center">Estamos disponibles para responder tus dudas o consultas. Escribenos un mensaje y te respondemos a la brevedad.</p>
+                <!-- RD Mailform-->
+                <form class="rd-mailform form-contact-line text-left offset-top-35" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                  <div class="form-inline-flex">
+                    <div class="form-group">
+                      <label class="form-label form-label-outside" for="contact-name-2">Nombre</label>
+                      <input class="form-control" id="contact-name-2" type="text" placeholder="Tu Nombre" name="name" data-constraints="@Required">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label form-label-outside" for="contact-username">Apellido</label>
+                      <input class="form-control" id="contact-username" type="text" placeholder="Tu Apellido" name="password" data-constraints="@Required">
+                    </div>
+                  </div>
+                  <div class="form-group offset-top-15">
+                    <label class="form-label form-label-outside" for="message">Tu Mensaje</label>
+                    <textarea class="form-control" id="message" placeholder="Escribe tu mensaje aquí" name="message" data-constraints="@Required"></textarea>
+                  </div>
+                  <div class="offset-top-15">
+                    <div class="form-inline-flex">
+                      <div class="form-group">
+                        <label class="form-label form-label-outside" for="contact-email-2">E-mail</label>
+                        <input class="form-control" id="contact-email-2" type="email" placeholder="Ingresa tu E-mail" name="email" data-constraints="@Email @Required">
+                      </div>
+                      <div class="form-group">
+                        <button class="btn btn-primary-lighter btn-fullwidth" type="submit">Enviar Mensaje</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-4 offset-top-50 offset-md-top-0 text-left">
+                <aside class="inset-lg-left-70">
+                  <div class="row">
+                    <div class="col-xs-6 col-md-12">
+                      <div class="h6 text-uppercase">Siguenos</div>
+                      <div class="text-subline offset-top-15"></div>
+                      <div class="offset-top-25">
+                        <ul class="list-inline">
+                          <li><a class="icon icon-xs link-gray-light fa-facebook" href="https://web.facebook.com/bigmammatalagante/" target="_blank" rel="noopener noreferrer"></a></li>
+                          <li><a class="icon icon-xs link-gray-light fa-twitter" href="#"></a></li>
+                          <li><a class="icon icon-xs link-gray-light fa-google-plus" href="#"></a></li>
+                          <li><a class="icon icon-xs link-gray-light fa-instagram" href="#"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-md-12 offset-top-50 offset-xs-top-0 offset-md-top-50">
+                      <div class="block-info">
+                        <div class="h6 text-uppercase">Teléfono</div>
+                        <div class="text-subline offset-top-15"></div>
+                        <div class="offset-top-25">
+                          <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                            <div class="unit-left"><span class="icon icon-xs icon-primary text-middle mdi mdi-phone"></span></div>
+                            <div class="unit-body"><a class="link-default" href="tel:#">+56 9 4119 0183
+</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-md-12 offset-top-50">
+                      <div class="block-info">
+                        <div class="h6 text-uppercase">Dirección</div>
+                        <div class="text-subline offset-top-15"></div>
+                        <div class="offset-top-25 unit unit-horizontal unit-spacing-xs">
+                          <div class="unit-left"><span class="icon icon-xs icon-primary text-middle mdi mdi-map-marker"></span></div>
+                          <div class="unit-body"><a class="link-default" href="#">Jose Leyan 683 local 2, Talagante</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 col-md-12 offset-top-50">
+                      <div class="block-info">
+                        <div class="h6 text-uppercase">Horario</div>
+                        <div class="text-subline offset-top-15"></div>
+                        <div class="offset-top-25 unit unit-horizontal unit-spacing-xs">
+                          <div class="unit-left"><span class="icon icon-xs icon-primary mdi mdi-clock text-middle"></span></div>
+                          <div class="unit-body"><span class="text-dark inset-left-5">1:00pm - 8:30pm</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
+          <!--Please note that YOUR_API_KEY should replaced with your key.-->
+          <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">
+          <div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]">
+            <div class="google-map"></div>
+            <ul class="google-map-markers">
+              <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
+            </ul>
+          </div>-->
+          <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jose%20Leyan%20683%20local%202,%20Talagante+(Big%20Mamma%20Talagante)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+        </section>
+      </main>

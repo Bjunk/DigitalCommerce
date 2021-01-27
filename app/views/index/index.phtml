@@ -1,745 +1,654 @@
-<body>
-    <header class="header">
-        <div class="header__content header__content--fluid-width">
-            <div class="header__logo-title">DXS.Cloud</div>
-            <nav class="header__menu">                                                                   
-                <ul>
-                    <li><a class="selected header-link" href="/<?php echo $language."-".$country."/"; ?>"><?php echo $message[$language]['home']; ?></a></li>
-                    <li class="menu-item-has-children"><a href="#features" class="header-link"><?php echo $message[$language]['features']; ?></a>
-                        <ul class="sub-menu">
-                            <li><a href="#about" class="header-link"><?php echo $message[$language]['products']; ?></a></li>
-                            <li><a href="#about2" class="header-link"><?php echo $message[$language]['howworks']; ?></a></li>
-                            <li><a href="#clients" class="header-link">O<?php echo $message[$language]['ourclients']; ?></a></li>
-                            <li><a href="#testimonials" class="header-link"><?php echo $message[$language]['testimonials']; ?></a></li>
-                            <li><a href="#support" class="header-link"><?php echo $message[$language]['support']; ?></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#pricing" class="header-link"><?php echo $message[$language]['pricing']; ?></a></li>
-                    <li><a href="#support" class="header-link"><?php echo $message[$language]['contact']; ?></a></li>
-                    <li class="menu-item-has-children"><a href="" class="header-link"><?php echo $message[$language]['lang']; ?></a>
-                        <ul class="sub-menu">
-                            <li><a href="/en-<?php echo $country; ?>/" class="header-link">English</a></li>
-                            <li><a href="/es-<?php echo $country; ?>/" class="header-link">Español</a></li>
-                            <li><a href="/fr-<?php echo $country; ?>/" class="header-link">Français</a></li>
-                            <li><a href="/de-<?php echo $country; ?>/" class="header-link">Deutsche</a></li>
-                            <li><a href="/pt-<?php echo $country; ?>/" class="header-link">Português</a></li>
-                            <li><a href="/cn-<?php echo $country; ?>/" class="header-link">中文</a></li>
-                            <li><a href="/jp-<?php echo $country; ?>/" class="header-link">日本人</a></li>
-                            <li><a href="/it-<?php echo $country; ?>/" class="header-link">Italiano</a></li>
-                        </ul>
-                    <li class="header__btn header__btn--login modal-toggle" data-openpopup="signuplogin" data-popup="login"><a href="#"><?php echo $message[$language]['login']; ?></a></li>
-                    <li class="header__btn header__btn--signup modal-toggle" data-openpopup="signuplogin" data-popup="signup"><a href="start/"><?php echo $message[$language]['getstarted']; ?></a></li>          
-                </ul>
-            </nav> 
-        </div>      
-    </header>
-
-    <!-- Section -- intro -->
-    <section class="section section--intro" id="intro">
-            <div class="section__content section__content--fluid-width section__content--intro">
-                <div class="intro">
-                    <div class="intro__content">
-                    <div class="intro__title"><span><?php echo $message[$language]['title']; ?></span> <?php echo $message[$language]['message1']; ?></div>
-                    <div class="intro__subtitle"><?php echo $message[$language]['message2']; ?></div>
-                    <!-- <div class="intro__description">For as low as <span>$0.95</span> per user account</div> -->
-                    <div class="intro__buttons intro__buttons--left">
-                        <!-- <a href="index.html" class="btn btn--blue-bg btn--play modal-toggle" data-openpopup="animation">WATCH DEMO</a> -->
-                        <a href="/join/" class="btn btn--orange-bg"><?php echo $message[$language]['startnow']; ?></a>
-                    </div>
-                    </div>  
-                </div>
-            </div>
-            <div class="intro-animation">
-                <img src="/images/img_6.png" alt="" title=""/>
-            </div>
-            <svg class="svg-intro-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0,70 C30,130 70,50 100,70 L100,100 0,100 Z" fill="#ffffff"><animate 
-                      repeatCount="indefinite" 
-                      fill="#454599" 
-                      attributeName="d" 
-                      dur="15s" 
-                      values="
-                        M0 70 
-                        C 30,130
-                          70,50
-                          100,70 
-
-                        V 359 
-                        H 0 
-                        V 67 
-                        Z; 
-
-                        M0 77 
-                        C 473,-40
-                          1222,283
-                          1920,136 
-
-                        V 359 
-                        H 0 
-                        V 67 
-                        Z; 
-
-                        M0 77 
-                        C 973,260
-                          1722,-53
-                          1920,120 
-
-                        V 359 
-                        H 0 
-                        V 67 
-                        Z; 
-
-                        M0 77 
-                        C 473,283
-                          822,-40
-                          1920,116 
-
-                        V 359 
-                        H 0 
-                        V 67 
-                        Z
-                        ">
-                    </animate>
-                </path>
-            </svg>
-            <svg class="svg-intro-bottom-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0,70 C30,130 70,50 100,70 L100,100 0,100 Z" fill="#ffffff" fill-opacity="0.4">
-                <animate 
-                      repeatCount="indefinite" 
-                      fill="#454599" 
-                      attributeName="d" 
-                      dur="15s" 
-                      values="
-                        M0 70 
-                        C 30,130
-                          70,50
-                          100,70 
-
-                        V 359 
-                        H 0 
-                        V 67 
-                        Z; 
-
-                        M0 77 
-                        C 473,-40
-                          1222,283
-                          1920,136 
-
-                        V 359 
-                        H 0 
-                        V 67 
-                        Z; 
-
-                        M0,70 C30,130 70,50 100,70 L100,100 0,100 Z
-                        ">
-                    </animate>
-                </path>
-            </svg>
-            <svg class="svg-intro-bottom-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M95,0 Q90,90 10,100 L100,100 100,0 Z" fill="#ffffff" fill-opacity="0.1">
-                <animate 
-                      repeatCount="indefinite" 
-                      fill="#454599" 
-                      attributeName="d" 
-                      dur="15s" 
-                      values="
-                        M0 70 
-                        C 30,130
-                          70,50
-                          100,70 
-
-                        V 359 
-                        H 0 
-                        V 67 
-                        Z; 
-
-                        M0 77 
-                        C 473,-40
-                          1222,283
-                          1920,136 
-
-                        V 359 
-                        H 0 
-                        V 67 
-                        Z; 
-
-                        M0 77 
-                        C 973,260
-                          1722,-53
-                          1920,120 
-
-                        V 359 
-                        H 0 
-                        V 67 
-                        Z; 
-
-                        M0 77 
-                        C 473,283
-                          822,-40
-                          1920,116 
-
-                        V 359 
-                        H 0 
-                        V 67 
-                        Z
-                        ">
-                    </animate>
-                </path>
-            </svg>
-    </section>
-    
-    <!-- Section -- about -->
-    <section class="section section--about" id="about">
-
-            <div class="section__content section__content--fluid-width section__content--about">
-                <div class="grid grid--5col grid--about">
-                
-                    <div class="grid__item grid__item--x2">
-                        <h3 class="grid__title"><?php echo $message[$language]['message3']; ?> <span><?php echo $message[$language]['title'];?></span></h3>
-                        <p class="grid__text"><?php echo $message[$language]['description1'];?></p>
-                        <ul class="grid__list">
-                            <li><?php echo $message[$language]['message4'];?></li> 
-                            <li><?php echo $message[$language]['message5'];?></li> 
-                            <li><?php echo $message[$language]['message6'];?></li>
-                            <li><?php echo $message[$language]['message7'];?></li> 
-                        </ul>
-                        
-                    </div>
-                    <div class="grid__item grid__item--x3">
-                        <div class="grid__image grid__image--right" data-paroller-factor="0.2" data-paroller-type="foreground" data-paroller-direction="vertical"><img src="https://www.code-brew.com/wp-content/uploads/2019/08/img_2.png" alt="" title=""/></div>
-                    </div>
-                </div>
-            </div>
-        
-    </section>
-        <!-- Section -- about -->
-    <section class="section section--about">
-
-            <div class="section__content section__content--fluid-width section__content--about">
-                <div class="grid grid--5col grid--about">
-                
-                    <div class="grid__item grid__item--x2 grid__item--floated-right">
-                        <h3 class="grid__title">Powerful Auto-Scalling for <span>powerful e-commerce</span></h3>
-                        <p class="grid__text">Auto-scale up and down depending on your customer demand and transactions. Pay as you go. Instant Auto-Scaling Technology enable your business grow as you need.</p>
-                        <ul class="grid__list">
-                            <li>Auto-Scalling Technology</li>
-                            <li>Unparallel fault tolerance</li> 
-                            <li>Global High Availability</li> 
-                            <li>Ultra low Latency</li> 
-                        </ul>
-                        
-                    </div>
-                    <div class="grid__item grid__item--x3">
-                        <div class="grid__image grid__image--left" data-paroller-factor="0.2" data-paroller-type="foreground" data-paroller-direction="vertical"><img src="/images/img_1.png" alt="" title=""/></div>
-                    </div>
-
-                </div>
-            </div>
-        
-    </section>
-    <!-- Section -- about -->
-    <section class="section section--about" id="about">
-
-            <div class="section__content section__content--fluid-width section__content--about">
-                <div class="grid grid--5col grid--about">
-                
-                    <div class="grid__item grid__item--x2">
-                        <h3 class="grid__title">Start your E-commerce in seconds with <span>intelligent UX</span></h3>
-                        <p class="grid__text">Blocks, Elements and Modifiers. A smart HTML/CSS structure that can easely be reused. Layout driven by the purpose of modularity.</p>
-                        <ul class="grid__list">
-                            <li>Simple and Smart HTML code</li> 
-                            <li>Works reintegrated in any part of the layout</li> 
-                            <li>Reuse the elements from one design to another</li> 
-                        </ul>
-                        
-                    </div>
-                    <div class="grid__item grid__item--x3">
-                        <div class="grid__image grid__image--right" data-paroller-factor="0.2" data-paroller-type="foreground" data-paroller-direction="vertical"><img src="/images
-                            /layer-111@2x-1.png" alt="" title=""/></div>
-                    </div>
-                </div>
-            </div>
-        
-    </section>
-    <!-- Section -- about -->
-    <!-- Section -- about -->
-    <section class="section section--about">
-
-            <div class="section__content section__content--fluid-width section__content--about">
-                <div class="grid grid--5col grid--about">
-                
-                    <div class="grid__item grid__item--x2 grid__item--floated-right">
-                        <h3 class="grid__title">Powerful services for <span>powerful applications</span></h3>
-                        <p class="grid__text">Responsive code that makes your landing page look good on all devices (desktops, tablets, and phones). Created with mobile specialists.</p>
-                        <ul class="grid__list">
-                            <li>Responsive code</li> 
-                            <li>Look good on all devices</li> 
-                            <li>Created with mobile specialists</li> 
-                        </ul>
-                        
-                    </div>
-                    <div class="grid__item grid__item--x3">
-                        <div class="grid__image grid__image--left" data-paroller-factor="0.2" data-paroller-type="foreground" data-paroller-direction="vertical"><img src="/images/img_3.png" alt="" title=""/></div>
-                    </div>
-
-                </div>
-            </div>
-        
-    </section>
-    <!-- Section -- about -->
-    <section class="section section--about" id="about2">
-
-            <div class="section__content section__content--fluid-width section__content--about">
-                <div class="grid grid--5col grid--about">
-                
-                    <div class="grid__item grid__item--x2">
-                        <h3 class="grid__title">Layout driven by the <span>purpose of modularity</span>.</h3>
-                        <p class="grid__text">Choose between multiple unique designs and easy integrate elements from one design to another. Following the latest design trends.</p>
-                        <ul class="grid__list">
-                            <li>Elements from one design to another</li> 
-                            <li>Following the latest design trends</li> 
-                            <li>Reuse the elements from one design to another</li> 
-                        </ul>
-                        
-                    </div>
-                    <div class="grid__item grid__item--x3">
-                        <div class="grid__image grid__image--right" data-paroller-factor="0.2" data-paroller-type="foreground" data-paroller-direction="vertical"><img src="https://www.code-brew.com/wp-content/uploads/2019/08/img_4.png" alt="" title=""/></div>
-                    </div>
-                </div>
-            </div>
-        
-    </section>
-
-    
-    <!-- Section -- features -->
-    <section class="section section--features" id="features">
-
-            <div class="section__content section__content--fluid-width section__content--features">
-                    <h2 class="section__title section__title--centered">Features designed for you</h2>
-                <div class="section__description section__description--centered">
-                We believe we have created the most efficient SaaS landing page for your users. Landing page with features that will convince you to use it for your SaaS business.
-                </div>
-                <div class="grid grid--3col grid--features">
-                
-                    <div class="grid__item">
-                        <div class="grid__icon"><img src="/images/icons/icons-64-violet/responsive-64.png" alt="" title=""/></div>
-                        <h3 class="grid__title"><span>Responsive</span> Templates</h3>
-                        <p class="grid__text">Responsive code that makes your Digital Commerce look good on all devices (desktops, tablets, and phones). Created with mobile specialists.</p>
-                    </div>
-                    
-                    <div class="grid__item">
-                        <div class="grid__icon"><img src="/images/icons/icons-64-violet/desktop-chart-64.png" alt="" title=""/></div>
-                        <h3 class="grid__title"><span>Digital Platform </span>Analysis</h3>
-                        <p class="grid__text">A perfect structure created after we analized trends in SaaS landing page designs. Analysis made to the most popular SaaS businesses.</p>
-                    </div>
-                    
-                    <div class="grid__item">
-                        <div class="grid__icon"><img src="/images/icons/icons-64-violet/browser-64.png" alt="" title=""/></div>
-                        <h3 class="grid__title">Smart <span>BEM</span> Grid</h3>
-                        <p class="grid__text">Blocks, Elements and Modifiers. A smart HTML/CSS structure that can easely be reused. Layout driven by the purpose of modularity.</p>
-                    </div>  
-
-                </div>
-                
-                <div class="grid grid--3col grid--features">
-                
-                    
-                    <div class="grid__item">
-                        <div class="grid__icon"><img src="/images/icons/icons-64-violet/users-64.png" alt="" title=""/></div>
-                        <h3 class="grid__title">User <span>Friendly</span></h3>
-                        <p class="grid__text">Easy to navigate. Made with user experience in mind, in order to provide the perfect Digital Commerce experience for your client.</p>
-                    </div>
-                    
-                    <div class="grid__item">
-                        <div class="grid__icon"><img src="/images/icons/icons-64-violet/security-64.png" alt="" title=""/></div>
-                        <h3 class="grid__title">Best online <span>Security</span></h3>
-                        <p class="grid__text">A perfect structure created after we analized trends in SaaS Commerce. Analysis made to the most popular SaaS businesses.</p>
-                    </div>
-                    
-                    <div class="grid__item">
-                        <div class="grid__icon"><img src="/images/icons/icons-64-violet/target-64.png" alt="" title=""/></div>
-                        <h3 class="grid__title">Target <span>audience</span></h3>
-                        <p class="grid__text">Blocks, Elements and Modifiers. A smart HTML/CSS structure that can easely be reused. Layout driven by the purpose of modularity.</p>
-                    </div>
-
-                </div>
-            </div>
-
-            
-    </section>  
-    
-
-    
-    <!-- Section -- pricing -->
-    <section class="section" id="pricing">
-
-            <div class="section__content section__content--fluid-width section__content--padding">
-                    <h2 class="section__title section__title--centered">Our Plans</h2>
-                <!-- <div class="section__description section__description--centered">
-                We believe we have created the most efficient SaaS landing page for your users. Landing page with features that will convince you to use it for your SaaS business.
-                </div> -->
-                    <div class="pricing">
-                        <div class="pricing__switcher switcher">
-                            <div class="switcher__buttons">
-                                <div class="switcher__button switcher__button--enabled">Monthly</div> 
-                                <div class="switcher__button">Yearly</div>
-                                <div class="switcher__border"></div>
+      <!-- Page Content-->
+      <main class="page-content">
+        <!-- Swiper variant 3-->
+        <section class="bg-gray-darker">
+          <div class="swiper-variant-1">
+            <div class="swiper-container swiper-slider" data-slide-effect="fade" data-min-height="600px">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-slide-bg="images/home-slide-1-1920x800.jpg">
+                  <div class="swiper-slide-caption text-center">
+                    <div class="container">
+                      <div class="row align-items-sm-center">
+                        <div class="col-sm-6 col-md-5 col-lg-4 text-uppercase">
+                          <div class="group-sm">
+                            <div class="label-swiper h4 text-italic text-white" data-caption-animate="fadeInLeftSm" data-caption-delay="200"><span>Nuevo</span><span>Menu</span></div>
+                            <h1 class="text-italic text-white" data-caption-animate="fadeInRightSm" data-caption-delay="100">Pizza</h1>
+                          </div>
+                          <h3 class="text-primary-lighter offset-top-5" data-caption-animate="fadeInUpSmall" data-caption-delay="600">con camarones</h3><a class="btn btn-burnt-sienna btn-md btn-shape-circle offset-top-20" href="#" data-caption-animate="fadeInUpSmall" data-caption-delay="800">Comprar</a>
+                        </div>
+                        <div class="col-sm-6 col-md-7 col-lg-8 text-lg-right veil reveal-sm-inline-block">
+                          <div style="position:relative;z-index:2;">
+                            <div data-caption-animate="fadeInLeftSm" data-caption-delay="1500"><img class="img-caption-5 img-responsive veil reveal-lg-inline-block" src="/images/slide-caption-image-6-100x118.png" alt="" width="100" height="118"/>
                             </div>
-                            
-                        </div>
-
-                    
-                        <div class="pricing__plan">
-                            <h3 class="pricing__title">Basic</h3>   
-                            <div class="pricing__values">
-                                <div class="pricing__value pricing__value--show"><span>$</span>29 <b>/ month</b></div>
-                                <div class="pricing__value pricing__value--hide pricing__value--hidden"><span>$</span>290 <b>/ yearly</b></div>
-                            </div>  
-                            <ul class="pricing__list">
-                                <li><b>Small</b> Product Catalog</li>
-                                <li><b>Unlimited</b> Transactions</li>   
-                                <li><b>Limited</b> Customer Analysis</li>
-                                <li class="disabled">X-Language and X-Currency</li> 
-                                <li class="disabled">Customer Billing &amp; Invoice</li>   
-                                <li class="disabled">Shipping Cost Integration</li>
-                                <li class="disabled">API Integration</li>         
-                            </ul> 
-                            <a class="pricing__signup" href="">Start Now</a>
-                        </div>
-                        <div class="pricing__plan pricing__plan--popular">
-                                 <div class="pricing__badge-bg"></div>
-                             <div class="pricing__badge-text">POPULAR</div>
-                            <h3 class="pricing__title">PRO</h3>       
-                            <div class="pricing__values">
-                                <div class="pricing__value pricing__value--show"><span>$</span>80 <b>/ month</b></div>
-                                <div class="pricing__value pricing__value--hide pricing__value--hidden"><span>$</span>800 <b>/ yearly</b></div>
+                            <div data-caption-animate="fadeInRotate" data-caption-delay="100"><img class="img-responsive reveal-inline-block" src="/images/slide-caption-image-1-599x596.png" alt="" width="599" height="596"/>
                             </div>
-                            <ul class="pricing__list">
-                                <li><b>Large</b> Product Catalog</li>
-                                <li><b>Unlimited</b> Transactions</li>   
-                                <li><b>Full</b> Customer Analysis</li>
-                                <li>X-Language and X-Currency</li>
-                                <li>Customer Billing &amp; Invoice</li>    
-                                <li>Shipping Cost Integration</li>
-                                <li class="disabled">API Integration</li>     
-                            </ul> 
-                            <a class="pricing__signup" href="">Start Now</a>
+                          </div>
+                          <div class="img-caption-1" data-caption-animate="fadeInRightSm" data-caption-delay="600"><img class="img-responsive veil reveal-lg-inline-block" src="/images/slide-caption-image-2-346x336.png" alt="" width="346" height="336"/>
+                          </div>
+                          <div class="img-caption-2" data-caption-animate="fadeInRightSm" data-caption-delay="900"><img class=" img-responsive veil reveal-lg-inline-block" src="/images/slide-caption-image-3-228x310.png" alt="" width="228" height="310"/>
+                          </div>
+                          <div class="img-caption-3" data-caption-animate="fadeInLeftSm" data-caption-delay="800"><img class=" img-responsive veil reveal-lg-inline-block" src="/images/slide-caption-image-4-179x213.png" alt="" width="179" height="213"/>
+                          </div>
+                          <div class="img-caption-4" data-caption-animate="fadeInLeftSm" data-caption-delay="1000"><img class="img-responsive veil reveal-lg-inline-block" src="/images/slide-caption-image-5-522x343.png" alt="" width="522" height="343"/>
+                          </div>
                         </div>
-                        <div class="pricing__plan">
-                            <h3 class="pricing__title">ULTRA</h3>       
-                            <div class="pricing__values">
-                                <div class="pricing__value pricing__value--show"><span>$</span>299 <b>/ month</b></div>
-                                <div class="pricing__value pricing__value--hide pricing__value--hidden"><span>$</span>2990 <b>/ yearly</b></div>
-                            </div>
-                            <ul class="pricing__list">
-                                <li><b>Unlimited</b> Product Catalog</li>
-                                <li><b>Unlimited</b> Transactions</li>   
-                                <li><b>Professional</b> Customer Analysis</li>
-                                <li>X-Language and X-Currency</li>
-                                <li>Customer Billing &amp; Invoice</li>    
-                                <li>Shipping Cost Integration</li>
-                                <li>API Integration</li>
-            
-                            </ul> 
-                            <a class="pricing__signup" href="">Start Now</a>
-                        </div>  
+                      </div>
                     </div>
-                
-                <div class="clear"></div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-slide-bg="images/home-slide-2-1920x800.jpg">
+                  <div class="swiper-slide-caption slide-caption-2 text-center">
+                    <div class="container">
+                      <div class="row align-items-sm-center">
+                        <div class="col-sm-6 col-md-5 col-lg-4">
+                          <h5 class="text-italic font-secondary text-white" data-caption-animate="fadeInUpSmall" data-caption-delay="100">Big Mamma</h5>
+                          <h3 class="text-uppercase text-white offset-top-0" data-caption-animate="fadeInUpSmall" data-caption-delay="400">Hamgurguesas</h2>
+                          <!-- <h1 class="text-white offset-top-0" data-caption-animate="fadeInUpSmall" data-caption-delay="700">Gourmet</h1>-->
+                          <h1 class="text-primary-lighter offset-top-10" data-caption-animate="fadeInUpSmall" data-caption-delay="1000">Gourmet</h4>
+                          <a class="btn btn-burnt-sienna btn-md btn-shape-circle offset-top-20" href="#" data-caption-animate="fadeInUpSmall" data-caption-delay="800">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-slide-bg="/images/home-slide-3-1920x800.jpg">
+                  <div class="swiper-slide-caption text-uppercase text-center">
+                    <div class="container">
+                      <div class="row align-items-sm-center">
+                        <div class="col-sm-6 col-md-5 col-lg-4">
+                          <div class="label-swiper label-swiper-var-2" data-caption-animate="fadeInUpSmall" data-caption-delay="100">
+                            <h4 class="text-italic">Big Mamma</h4>
+                          </div>
+                          <h1 class="small text-white" data-caption-animate="fadeInUpSmall" data-caption-delay="400">Vaquita</h1>
+                          <h3 class="text-primary-lighter offset-top-0" data-caption-animate="fadeInUpSmall" data-caption-delay="700">Burger</h3>
+                          <a class="btn btn-burnt-sienna btn-md btn-shape-circle offset-top-20" href="#" data-caption-animate="fadeInUpSmall" data-caption-delay="800">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Swiper Navigation-->
+              <div class="swiper-pagination-wrap">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5 col-lg-4">
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        
-    </section>
-    
-    <!-- Section -- testimonials -->
-    <section class="section section--testimonials" id="testimonials">
+          </div>
+        </section>
 
-            <div class="section__content section__content--fluid-width section__content--padding">
-                    <h2 class="section__title section__title--centered">Customers</h2>
-                      <div class="testimonials">
-                        <div class="testimonials__content swiper-wrapper">
-                              <div class="testimonials__slide swiper-slide">
-                                <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="/images/avatar-1.jpg" alt="" title=""/></div>
-                                <div class="testimonials__source">Lason Duvan <a href="#">New York Business Center</a></div>
-                                <div class="testimonials__text" data-swiper-parallax="-100%"><p>"Business is all about the customer: what the customer wants and what they get. "</p></div>
-                                
-                              </div>
-                              <div class="testimonials__slide swiper-slide">
-                                <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="/images/avatar-2.jpg" alt="" title=""/></div>
-                                <div class="testimonials__source">Jada Sacks <a href="#">Paris Tehnics</a></div>
-                                <div class="testimonials__text" data-swiper-parallax="-100%"><p>" I've internalized it to the point of understanding that the success of my actions and/or endeavors"</p></div>
-                                
-                              </div>
-                              <div class="testimonials__slide swiper-slide">
-                                <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="/images/avatar-3.jpg" alt="" title=""/></div>
-                                <div class="testimonials__source">Lason Duvan <a href="#">Music Software</a></div>
-                                <div class="testimonials__text" data-swiper-parallax="-100%"><p>"The American Dream is that any man or woman, despite of his or her background, can change their circumstances"</p></div>
-                                
-                              </div>
-                              <div class="testimonials__slide swiper-slide">
-                                <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="/images/avatar-4.jpg" alt="" title=""/></div>
-                                <div class="testimonials__source">Duran Jackson <a href="#">New York Business Center</a></div>
-                                <div class="testimonials__text" data-swiper-parallax="-100%"><p>"Generally, every customer wants a product or service that solves their problem, worth their money"</p></div>
-                                
-                              </div>
-                              <div class="testimonials__slide swiper-slide">
-                                <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="/images/avatar-5.jpg" alt="" title=""/></div>
-                                <div class="testimonials__source">Maria Allesi <a href="#">Italy Solutions</a></div>
-                                <div class="testimonials__text" data-swiper-parallax="-100%"><p>"No one can make you successful; the will to success comes from within.' I've made this my motto."</p></div>
-                                
-                              </div>
-                              <div class="testimonials__slide swiper-slide">
-                                <div class="testimonials__thumb" data-swiper-parallax="-50%"><img src="/images/avatar-6.jpg" alt="" title=""/></div>
-                                <div class="testimonials__source">Jenifer Patrison<a href="#">App Dating</a></div>
-                                <div class="testimonials__text" data-swiper-parallax="-100%"><p>"Can change their circumstances and rise as high as they are willing to work"</p></div>
-                                
-                              </div>  
-                        </div>
-                        
-                        <div class="testimonials__pagination swiper-pagination"></div>
-                                <div class="testimonials__button--next swiper-button-next"></div>
-                            <div class="testimonials__button--prev swiper-button-prev"></div>
-                    </div>
-                <div class="clear"></div>
+        <section class="section-50 section-sm-100">
+          <div class="container-wide">
+            <div class="row justify-content-xs-center">
+              <div class="col-sm-6 col-md-4 view-animate zoomInSmall delay-04"><a class="thumbnail-variant-3" href="/product/"><img class="img-responsive" src="/images/index-01-566x401.jpg" alt="" width="566" height="401"/>
+                  <div class="caption text-center">
+                    <h3 class="text-italic">Combos</h3>
+                    <p class="big">Burger + Papas Fritas + Bebida</p>
+                  </div></a></div>
+              <div class="col-sm-6 col-md-4 view-animate zoomInSmall delay-06"><a class="thumbnail-variant-3" href="/product/"><img class="img-responsive" src="/images/index-02-566x401.jpg" alt="" width="566" height="401"/>
+                  <div class="caption text-center">
+                    <h3 class="text-italic">Compra Online</h3>
+                    <p class="big">Lunes a Viernes 1 PM - 8:30 PM</p>
+                  </div></a></div>
+              <div class="col-sm-6 col-md-4 offset-sm-top-30 offset-md-top-0 view-animate zoomInSmall delay-02"><a class="thumbnail-variant-3" href="/product/"><img class="img-responsive" src="/images/index-03-566x401.jpg" alt="" width="566" height="401"/>
+                  <div class="caption text-center">
+                    <h3 class="text-italic">Postres</h3>
+                    <p class="big">Desde $1.000</p>
+                  </div></a></div>
             </div>
-        
-    </section>  
-    
-    
-    <!-- Section -->
-    <section class="section" id="support">
-            <div class="section__content section__content--fluid-width section__content--padding">  
-                <div class="grid grid--2col grid--support">
-                    <div class="grid__item grid__item--padding">
-                        
-                        <h3 class="grid__title">Help &amp; Support</h3>
-                        <p class="grid__text">Your issue is our main priority. Our 24/7 support team is here to help you and make sure our product is up to date. Have a presale question about our products and features? Or looking for a refund? We would love to hear what you concern is. Online awards and publications. Get our media resources and learn about our company information.</p>
+          </div>
+        </section>
+        <section class="section-50 section-sm-top-80 section-sm-bottom-100 bg-gray-lighter">
+          <h3>Menú</h3>
+          <div class="responsive-tabs responsive-tabs-button responsive-tabs-horizontal responsive-tabs-carousel offset-top-40">
+            <ul class="resp-tabs-list">
+              <li>Hamburguesas</li>
+              <li>Sandwichs</li>
+              <li>Pizzas</li>
+              <li>Ensaladas</li>
+              <li>Bebidas</li>
+              <li>Postres</li>
+            </ul>
+            <div class="resp-tabs-container text-left">
+              <!--hamburger-->
+              <div>
+                <!-- Slick Carousel-->
+                <div class="slick-slider slick-tab-centered" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-xs-items="1" data-sm-items="2" data-md-items="3" data-lg-items="3" data-xl-items="5" data-center-mode="true" data-center-padding="10">
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/menu-modern-1-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Mexican Burger</a></h5>
+                        <p class="text-italic">This Mexican-style burger is pumped up with flavor from chili powder, cilantro, and jalapeno pepper.  Served on buns topped with lettuce.</p>
+                        <p class="price">12.500</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
                     </div>
-                    <div class="grid__item grid__item--padding grid__item--centering">
-                        <a href="#" class="grid__more">GET IN TOUCH NOW</a>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/menu-modern-3-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Mini Burger</a></h5>
+                        <p class="text-italic">Mini burgers, known by many as sliders, are the hottest little food trend sweeping the nation, with the half size of a classic burger.</p>
+                        <p class="price">10.900</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
                     </div>
-                    <svg class="svg-support-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <path d="M0,90 Q0,100 3,100 L95,96 Q100,96 99,80 L95,25 Q94,15 90,15 L6,0 Q2,0 2,10 Z" fill="#fb993e"/>
-                    </svg>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/menu-modern-2-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Classic Burger</a></h5>
+                        <p class="text-italic">Chicken beef cooked over charcoal and onions on the grill, hot pepper, lettuce, tomatoes, double American cheddar cheese sauce.</p>
+                        <p class="price">13.900</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/menu-modern-6-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">California Burger</a></h5>
+                        <p class="text-italic">Alfalfa sprouts crown these juicy burgers. A combination of regular ground turkey and ground turkey breast offers superior texture.</p>
+                        <p class="price">17.970</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/menu-modern-5-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Double Burger</a></h5>
+                        <p class="text-italic">Two signature flame-grilled beef patties topped with a simple layer of melted American cheese and crinkle cut pickles.</p>
+                        <p class="price">20.000</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/menu-modern-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Chicken Burger</a></h5>
+                        <p class="text-italic">Our Chicken Burger features a savory grilled chicken burger patty topped with juicy tomatoes, fresh lettuce, and mayonnaise.</p>
+                        <p class="price">9.500</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="clear"></div>
+              </div>
+              <!--Toasts-->
+              <div>
+                <!-- Slick Carousel-->
+                <div class="slick-slider slick-tab-centered" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-xs-items="1" data-sm-items="2" data-md-items="3" data-lg-items="3" data-xl-items="5" data-center-mode="true" data-center-padding="10">
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/toast-1-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Tomato Toast</a></h5>
+                        <p class="text-italic">Enjoy this amazing combination of cheese and tomato with a little bit of salad and cucumbers on the freshly baked bread.</p>
+                        <p class="price">12.500</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/toast-2-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Cheese Toast</a></h5>
+                        <p class="text-italic">This toast is one of the most popular in our menu, and it’s no wonder why – it’s as tasty as it’s original and easy to make.</p>
+                        <p class="price">10.900</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/toast-3-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Beef Toast</a></h5>
+                        <p class="text-italic">Tender, flavorful and perfectly seasoned roast beef, sliced thin, topped with smoked Gouda cheese and served on a baguette.</p>
+                        <p class="price">13.900</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/toast-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Italian Toast</a></h5>
+                        <p class="text-italic">Experience the flavor of true Italian cuisine with this toast, which includes Provolone Cheese, fresh tomatoes, and freshly baked bread.</p>
+                        <p class="price">17.970</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/toast-5-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Mediterranean Toast</a></h5>
+                        <p class="text-italic">Warm, toasty and hearty, this toast will satisfy your appetite with Zippy Hummus, Roasted Red Peppers, and Fried Bacon.</p>
+                        <p class="price">25.000</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/toast-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Chicken Toast</a></h5>
+                        <p class="text-italic">We reimagined the original Chicken Sandwich, and now you can enjoy the taste of our Chicken Toast with cherry tomatoes and salad.</p>
+                        <p class="price">9.500</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Pizzas-->
+              <div>
+                <!-- Slick Carousel-->
+                <div class="slick-slider slick-tab-centered" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-xs-items="1" data-sm-items="2" data-md-items="3" data-lg-items="3" data-xl-items="5" data-center-mode="true" data-center-padding="10">
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/pizzas-1-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Hawaiian</a></h5>
+                        <p class="text-italic">Fresh pineapple, applewood smoked ham and slivered scallions make this pizza #1 among our youngest visitors.</p>
+                        <p class="price">12.50</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/pizzas-2-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Sicilian</a></h5>
+                        <p class="text-italic">Rustic meets refined in this flavorful pizza with spicy marinara, Italian sausage, spicy Capicola ham, salami, and Mozzarella.</p>
+                        <p class="price">10.90</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/pizzas-3-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Classic Cheese</a></h5>
+                        <p class="text-italic">Large round pizza from QuickFood topped with 100% Mozzarella and Muenster cheeses, hot out of the oven and ready when you are.</p>
+                        <p class="price">13.90</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/pizzas-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Margherita</a></h5>
+                        <p class="text-italic">The classic that everyone loves. Try our Margherita with Italian tomatoes, fresh Mozzarella, fresh basil and Parmesan.</p>
+                        <p class="price">17.97</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/pizzas-5-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Neapolitan</a></h5>
+                        <p class="text-italic">One of our most popular dishes, this pizza includes fresh tomatoes, cheese, oil, and garlic and is served with numerous toppings.</p>
+                        <p class="price">25.00</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/pizzas-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Pepperoni</a></h5>
+                        <p class="text-italic">An American favorite of all times! Experience the taste of original Pepperoni cooked and delivered hot by the team of QuickFood.</p>
+                        <p class="price">9.50</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Salads-->
+              <div>
+                <!-- Slick Carousel-->
+                <div class="slick-slider slick-tab-centered" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-xs-items="1" data-sm-items="2" data-md-items="3" data-lg-items="3" data-xl-items="5" data-center-mode="true" data-center-padding="10">
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/salads-1-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Buffalo Bleu</a></h5>
+                        <p class="text-italic">Chopped romaine &amp; iceberg blend, all-natural chicken, original buffalo new york spicy sauce, grape tomatoes, and banana peppers.</p>
+                        <p class="price">12.50</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/salads-2-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Greek Salad</a></h5>
+                        <p class="text-italic">Cucumbers, grape tomatoes, red onions, banana peppers, black olives, and feta cheese with balsamic vinaigrette dressing.</p>
+                        <p class="price">10.90</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/salads-3-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Turkey Salad</a></h5>
+                        <p class="text-italic">Chopped romaine &amp; iceberg blend, radiatorre pasta, roasted turkey, crispy bacon, tomatoes, and buttermilk ranch dressing</p>
+                        <p class="price">13.90</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/salads-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Mediterranean</a></h5>
+                        <p class="text-italic">Spring mix, all-natural chicken, quinoa, black olives, marinated tomatoes, sunflower seeds, feta cheese, and balsamic vinaigrette.</p>
+                        <p class="price">17.97</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/salads-5-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Farmhouse salad</a></h5>
+                        <p class="text-italic">Baby kale, spring mix, roasted turkey, roasted butternut squash, roasted brussels sprouts, glazed pecans, and goat cheese.</p>
+                        <p class="price">25.00</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/salads-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Chicken Caprese</a></h5>
+                        <p class="text-italic">Romaine hearts, blackened chicken, avocado, chopped tomatoes, fresh mozzarella and balsamic vinaigrette combined perfectly.</p>
+                        <p class="price">9.50</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Drinks-->
+              <div>
+                <!-- Slick Carousel-->
+                <div class="slick-slider slick-tab-centered" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-xs-items="1" data-sm-items="2" data-md-items="3" data-lg-items="3" data-xl-items="5" data-center-mode="true" data-center-padding="10">
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/drinks-1-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Diet Coke</a></h5>
+                        <p class="text-italic">Try a crisp and refreshing no-calorie Diet Coke, refreshing classics that compliments any dish of our menu.</p>
+                        <p class="price">12.50</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/drinks-2-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Blue Moon</a></h5>
+                        <p class="text-italic">Blue Moon cocktail is a fun, frozen martini featuring blue curaçao, vanilla syrup, fresh orange juice, and whipped cream.</p>
+                        <p class="price">10.90</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/drinks-3-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Sparkling Water</a></h5>
+                        <p class="text-italic">A perfect choice for those who want a refreshing drink in hot weather. A wide range of flavors is available!</p>
+                        <p class="price">13.90</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/drinks-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Red Dawn</a></h5>
+                        <p class="text-italic">The Red Dawn- a strong and flavorful cocktail comprised of Southern Comfort, lemon-lime soda &amp; cranberry juice.</p>
+                        <p class="price">17.97</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/drinks-5-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Pina Colada</a></h5>
+                        <p class="text-italic">Our specialty frozen Pina Colada made with Don Q Rum, pineapple juice, and Coco Lopez, topped with toasted coconut.</p>
+                        <p class="price">25.00</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/drinks-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Classic Lemonade</a></h5>
+                        <p class="text-italic">Refreshing lemonade with a touch of mint and ginger. Refreshing lemon drinks that make for the perfect sip, when you are chilling.</p>
+                        <p class="price">9.50</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--deserts-->
+              <div>
+                <!-- Slick Carousel-->
+                <div class="slick-slider slick-tab-centered" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-xs-items="1" data-sm-items="2" data-md-items="3" data-lg-items="3" data-xl-items="5" data-center-mode="true" data-center-padding="10">
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/deserts-1-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">French macaroons</a></h5>
+                        <p class="text-italic">French macaroons are thin, flavorful meringue cookies that are sandwiched together with some kind of filling.</p>
+                        <p class="price">12.50</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/deserts-2-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Blueberry muffins</a></h5>
+                        <p class="text-italic">Big Blueberry muffins with a crusty sugar topping. The blueberries and the sweet batter are fabulous and taste amazing.</p>
+                        <p class="price">10.90</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/deserts-3-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Donuts</a></h5>
+                        <p class="text-italic">Homemade and filled with a delightful vanilla cream pudding and topped with sweet white icing, these donuts will delight you.</p>
+                        <p class="price">13.90</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/deserts-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Ice Cream</a></h5>
+                        <p class="text-italic">Our premium sweet-cream, classic vanilla ice cream is pure pleasure. Perfect for sundaes, with a slice of cake, or just heavenly when flying solo.</p>
+                        <p class="price">17.97</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/deserts-5-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Pancakes</a></h5>
+                        <p class="text-italic">Get the deliciousness of this all-American dish—in half the time. Enjoy the unforgettable taste of our pancakes!</p>
+                        <p class="price">25.00</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="thumbnail-menu-modern">
+                      <figure><img class="img-responsive" src="/images/deserts-4-310x260.png" alt="" width="310" height="260"/>
+                      </figure>
+                      <div class="caption">
+                        <h5><a class="link link-default" href="/product/">Chocolate Fudge Cake</a></h5>
+                        <p class="text-italic">Finished with chunks of chocolate brownie and served with vanilla ice cream, this cake is a must if you enjoy tasty desserts.</p>
+                        <p class="price">9.50</p><a class="btn btn-shape-circle btn-burnt-sienna offset-top-15" href="/product/">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        
-    </section>
-    
-    
-    <!-- Section -->
-    <section class="section section--clients" id="clients">
-            <div class="section__content section__content--fluid-width">                
-                <div class="grid grid--5col">
-                
-                    <div class="grid__item">
-                        <div class="grid__client-logo"><a href="#"><img src="/images/clients/clients-logo1.png" alt="" title=""/></a></div>
-                    </div>
-                    <div class="grid__item">
-                        <div class="grid__client-logo"><a href="#"><img src="/images/clients/clients-logo2.png" alt="" title=""/></a></div>
-                    </div>
-                    <div class="grid__item">
-                        <div class="grid__client-logo"><a href="#"><img src="/images/clients/clients-logo3.png" alt="" title=""/></a></div>
-                    </div>
-                    <div class="grid__item">
-                        <div class="grid__client-logo"><a href="#"><img src="/images/clients/clients-logo4.png" alt="" title=""/></a></div>
-                    </div>
-                    <div class="grid__item">
-                        <div class="grid__client-logo"><a href="#"><img src="/images/clients/clients-logo5.png" alt="" title=""/></a></div>
-                    </div>
+          </div>
+        </section>
+        <!--banner-->
+        <section class="bg-image-5">
+          <section class="parallax-container parallax-light" data-parallax-img="images/parallax-03.png">
+            <div class="parallax-content">
+              <div class="container section-80 section-sm-top-140 section-sm-bottom-150 text-center">
+                <div class="row justify-content-xs-center">
+                  <div class="col-sm-10 col-lg-6">
+                    <h4 class="text-italic divider-custom-small-primary">Delivery o Retira en Local</h4>
+                    <h2 class="text-uppercase text-italic offset-top-10 offset-sm-top-0">Oferta del Día</h2>
+                    <div class="label-price offset-top-10">
+                      <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+                        <div class="unit-left">
+                          <h1 class="text-accent"><sup class="h3 text-accent">9.000</sup></h1>
+                        </div>
+                        <div class="unit-body">
+                          <ul class="big text-left">
+                            <li>Burger La Vaquita</li>
+                            <li>Papas Fritas</li>
+                            <li>Bebida</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div><a class="btn btn-burnt-sienna btn-md btn-shape-circle offset-top-15" href="menu-classic.html">Comprar</a>
+                  </div>
                 </div>
-
+              </div>
             </div>
-            <svg class="svg-cta-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0,70 C30,130 70,50 100,70 L100,100 0,100 Z" fill="#42387a"/>
-            </svg>
-    </section>
-    
-    <!-- Section -->
-    <section class="section section--cta" id="cta">
-            <div class="section__content section__content--fluid-width section__content--padding section__content--cta">
-                    <h2 class="section__title section__title--centered section__title--cta">Get Started Now!</h2>
-                <div class="section__description section__description--centered section__description--cta">
-                We believe we have created the most efficient SaaS landing page for your users. Landing page with features that will convince you to use it for your SaaS business.
-                </div>
-                <div class="intro__buttons intro__buttons--centered">
-                <a href="index.html" class="btn btn--orange-bg">CREATE AN ACCOUNT</a>
-                </div>
+          </section>
+        </section>
+        <!--services-->
+        <section class="section-50 section-sm-130">
+          <div class="container">
+            <div class="row justify-content-xs-center">
+              <div class="col-sm-6 col-md-3 view-animate fadeInUpBigger delay-04">
+                <!-- Box icon-->
+                <article class="box-icon box-icon-variant-1">
+                  <div class="icon-wrap"><span class="icon icon-lg text-base thin-icon-time icon-xl"></span></div>
+                  <div class="box-icon-header">
+                    <h5>Rápido Delivery</h5>
+                  </div>
+                  <hr class="divider-xs bg-accent"/>
+                  <p>Delivery en las comunas de Talagante, Isla de Maipo y Calera de Tango.</p>
+                </article>
+              </div>
+              <div class="col-sm-6 col-md-3 offset-top-50 offset-sm-top-0 view-animate fadeInUpBigger delay-08">
+                <!-- Box icon-->
+                <article class="box-icon box-icon-variant-1">
+                  <div class="icon-wrap"><span class="icon icon-lg text-base restaurant-icon-17 icon-xxl"></span></div>
+                  <div class="box-icon-header">
+                    <h5>Ingredientes Frescos</h5>
+                  </div>
+                  <hr class="divider-xs bg-accent"/>
+                  <p>Nosotros utilizamos integredientes frescos y de calidad para crear nuestros productos.</p>
+                </article>
+              </div>
+              <div class="col-sm-6 col-md-3 offset-top-50 offset-md-top-0 view-animate fadeInUpBigger delay-04">
+                <!-- Box icon-->
+                <article class="box-icon box-icon-variant-1">
+                  <div class="icon-wrap"><span class="icon icon-lg text-base restaurant-icon-23 icon-xxl"></span></div>
+                  <div class="box-icon-header">
+                    <h5>Chef Gourmet</h5>
+                  </div>
+                  <hr class="divider-xs bg-accent"/>
+                  <p>Nuestro equipo tiene a los mejores Chefs de la zona con gran experiencia en comida Gourmet.</p>
+                </article>
+              </div>
+              <div class="col-sm-6 col-md-3 offset-top-50 offset-md-top-0 view-animate fadeInUpBigger delay-06">
+                <!-- Box icon-->
+                <article class="box-icon box-icon-variant-1">
+                  <div class="icon-wrap"><span class="icon icon-lg text-base restaurant-icon-22 icon-xxl"></span></div>
+                  <div class="box-icon-header">
+                    <h5>Variedad de Opciones</h5>
+                  </div>
+                  <hr class="divider-xs bg-accent"/>
+                  <p>In our menu you’ll find a wide variety of dishes, desserts, and drinks.</p>
+                </article>
+              </div>
             </div>
-            <svg class="svg-cta-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0,70 C30,130 70,50 100,70 L100,100 0,100 Z" fill="#ffffff"/>
-            </svg>
-    </section>
-
-    
-    <footer class="footer" id="footer">
-            <div class="footer__content footer__content--fluid-width footer__content--svg">
-            
-                <div class="grid grid--5col">
-                
-                    <div class="grid__item grid__item--x2">
-                        <h3 class="grid__title grid__title--footer-logo">Digital Experience Solution Inc (DXS)</h3>
-                        <p class="grid__text grid__text--copyright">Copyright &copy; 2020 DXS.Cloud.  <br />All Rights Reserved. Proudly made in Chile and based in US </p>
-                        <ul class="grid__list grid__list--sicons">
-                                <li><a href="#"><img src="/images/social/black/twitter.png" alt="" title=""/></a></li>
-                                <li><a href="#"><img src="/images/social/black/facebook.png" alt="" title=""/></a></li>
-                                <li><a href="#"><img src="/images/social/black/linkedin.png" alt="" title=""/></a></li>
-                        </ul>
-                    </div>
-                    <div class="grid__item">
-                        <h3 class="grid__title grid__title--footer">Company</h3>
-                        <ul class="grid__list grid__list--fmenu">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Awards</a></li>
-                                <li><a href="#">Users Program</a></li>
-                                <li><a href="#">Locations</a></li>
-                        </ul>
-                    </div>
-                    <div class="grid__item">
-                        <h3 class="grid__title grid__title--footer">Products</h3>
-                        <ul class="grid__list grid__list--fmenu">
-    
-                                <li><a href="#">Integrations</a></li>
-                                <li><a href="#">API</a></li>
-                                <li><a href="#">Pricing</a></li>
-                                <li><a href="#">Documentation</a></li>
-                                <li><a href="#">Release Notes</a></li>
-                        </ul>
-                    </div>
-                    <div class="grid__item">
-                        <h3 class="grid__title grid__title--footer">Support</h3>
-                        <ul class="grid__list grid__list--fmenu">
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Press</a></li>
-                                
-                        </ul>
-                    </div>
-                    
-                </div>
-                
-                
-            </div>
-
-
-    </footer>
-    
-
-      <section class="modal modal--signuplogin">
-        <div class="modal__overlay modal__overlay--toggle"></div>
-        <div class="modal__wrapper modal-transition">
-          
-        <div class="modal__body">
-                
-            <div class="modal__content modal__content--login">
-                <div class="modal__info">
-                    <h2 class="modal__title">First time here?</h2>
-                    <div class="modal__descr">Join now and get <span>20% OFF</span> for all products</div>
-                    <ul class="modal__list">
-                    <li>premium access to all products</li>
-                    <li>free testing tools</li>
-                    <li>unlimited user accounts</li>
-                    </ul>
-                    <button class="modal__switch modal__switch--signup" data-popup="signup">Signup</button>
-                </div>
-                <div class="modal__form form">
-                    <h2 class="form__title">Login</h2>
-                        <form class="form__container" id="LoginForm" method="post" action="/login/">
-                        
-                        <div class="form__row">
-                                <label class="form__label" for="namec">Name</label>
-                            <input name="namec" id="namec" class="form__input" type="text"/>
-                            <span class="form__row-border"></span>
-                        </div>
-                        <div class="form__row">
-                                <label class="form__label">Email</label>
-                            <input name="emailc" class="form__input" type="text"/>  
-                            <span class="form__row-border"></span>                                  
-                        </div>
-                        
-                        <div class="modal__checkbox"><input id="remember" name="remember" value="remember" checked type="checkbox"><label for="remember">Keep me Signed in</label></div>
-                        <div class="modal__switch modal__switch--forgot" data-popup="forgot">Forgot Password?</div>
-                        <input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submitl" value="LOGIN" />
-                        </form>
-                </div>
-            </div>  <!-- End Modal login -->
-            
-            <div class="modal__content modal__content--forgot">
-                <div class="modal__form form">
-                    <h2 class="form__title">Forgot Password</h2>
-                        <form class="form__container" id="ForgotForm" method="post" action="index.html">
-                        <div class="form__row">
-                            <label class="form__label">Email</label>
-                            <input name="emailf" class="form__input" type="text"/>  
-                            <span class="form__row-border"></span>                                  
-                        </div>
-                        <input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submitf" value="RESET PASSWORD" />
-                        </form>
-                </div>
-                <div class="modal__info">
-                    <h2 class="modal__title">We got you covered</h2>
-                    <div class="modal__descr">A new password will be sent by email. Remembered your password?</div>
-                    <button class="modal__switch modal__switch--signup" data-popup="login">Login</button>
-                </div>
-            </div>  <!-- End Modal login -->
-            
-            
-            <div class="modal__content modal__content--signup">
-                <div class="modal__form form">
-                    <h2 class="form__title">Signup</h2>
-                        <form class="form__container" id="SignupForm" method="post" action="index.html">
-                        <div class="form__row">
-                            <label class="form__label" for="names">Username</label>
-                            <input name="namec" id="names" class="form__input" type="text"/>
-                            <span class="form__row-border"></span>
-                        </div>
-                        <div class="form__row">
-                            <label class="form__label">Email</label>
-                            <input name="emails" class="form__input" type="text"/>  
-                            <span class="form__row-border"></span>                                  
-                        </div>
-                        <div class="form__row">
-                            <label class="form__label" for="pass">Password</label>
-                            <input name="pass" id="pass" class="form__input" type="password"/>
-                            <span class="form__row-border"></span>
-                        </div>
-                        <input type="submit" name="submit" class="form__submit btn btn--green-bg" id="submit" value="SIGNUP" />
-                        </form>
-                </div>
-                <div class="modal__info">
-                    <h2 class="modal__title">Allready have an account?</h2>
-                    <div class="modal__descr">Login now and starting using our <span>amazing</span> products</div>
-                    <ul class="modal__list">
-                    <li>premium access to all products</li>
-                    <li>free testing tools</li>
-                    <li>unlimited user accounts</li>
-                    </ul>
-                    <button class="modal__switch modal__switch--login" data-popup="login">Login</button>
-                </div>
-            </div>  <!-- End Modal signup -->
-            
-        </div>
-          
-        </div>
-      </section>    <!-- Modal for Login and Signup -->
-      <!--
-       <section class="modal modal--animation">
-        <div class="modal__overlay modal__overlay--toggle"></div>
-            <div class="modal__wrapper modal__wrapper--image modal-transition">
-                <div class="modal__body">
-                    <button class="modal__close modal__overlay--toggle"><span></span></button>
-                    <div class="modal__header">How it works animation</div>
-                    
-                    <div class="modal__image">
-                        <img src="/images/intro-animation.gif" alt="" title=""/>
-                    </div>
-                </div>
-            </div>
-      </section>  -->  <!-- Modal for animation -->
-<script src="/js/jquery-3.3.1.min.js"></script>
-<script src="/js/jquery.paroller.min.js"></script>
-<script src="/js/jquery.custom.js"></script>
-<script src="/js/swiper.min.js"></script>
-<script src="/js/swiper.custom.js"></script>
-<script src="/js/menu.js"></script>
+          </div>
+        </section>
+        <!--section gallery-->
+        <section>
+          <div class="row no-gutters" data-lightgallery="group">
+            <div class="col-xs-6 col-md-3"><a class="thumbnail-gallery" data-lightgallery="item" href="images/index-gallery-1-1200x800_original.jpg"><img src="/images/index-gallery-1-480x394.jpg" alt="" width="480" height="394"/></a></div>
+            <div class="col-xs-6 col-md-3"><a class="thumbnail-gallery" data-lightgallery="item" href="images/index-gallery-2-1200x800_original.jpg"><img src="/images/index-gallery-2-480x394.jpg" alt="" width="480" height="394"/></a></div>
+            <div class="col-xs-6 col-md-3"><a class="thumbnail-gallery" data-lightgallery="item" href="images/index-gallery-3-1200x800_original.jpg"><img src="/images/index-gallery-3-480x394.jpg" alt="" width="480" height="394"/></a></div>
+            <div class="col-xs-6 col-md-3"><a class="thumbnail-gallery" data-lightgallery="item" href="images/index-gallery-4-1200x800_original.jpg"><img src="/images/index-gallery-4-480x394.jpg" alt="" width="480" height="394"/></a></div>
+          </div>
+        </section>
+        <section>
+          <!--Please, add the data attribute data-key="YOUR_API_KEY" in order to insert your own API key for the Google map.-->
+          <!--Please note that YOUR_API_KEY should replaced with your key.-->
+          <!--Example: <div class="google-map-container" data-key="YOUR_API_KEY">
+          <div class="google-map-container" data-center="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-zoom="5" data-icon="images/gmap_marker.png" data-icon-active="images/gmap_marker_active.png" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:60}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;lightness&quot;:40},{&quot;visibility&quot;:&quot;on&quot;}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-100},{&quot;visibility&quot;:&quot;simplified&quot;}]},{&quot;featureType&quot;:&quot;administrative.province&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;on&quot;},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#ef8c25&quot;},{&quot;lightness&quot;:40}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;elementType&quot;:&quot;geometry.stroke&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;poi.park&quot;,&quot;elementType&quot;:&quot;geometry.fill&quot;,&quot;stylers&quot;:[{&quot;color&quot;:&quot;#b6c54c&quot;},{&quot;lightness&quot;:40},{&quot;saturation&quot;:-40}]},{}]">
+            <div class="google-map"></div>
+            <ul class="google-map-markers">
+              <li data-location="9870 St Vincent Place, Glasgow, DC 45 Fr 45." data-description="9870 St Vincent Place, Glasgow"></li>
+            </ul>
+          </div>-->
+          <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jose%20Leyan%20683%20local%202,%20Talagante+(Big%20Mamma%20Talagante)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+        </section>
+      </main>
