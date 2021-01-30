@@ -1,0 +1,86 @@
+      <!-- Page Content-->
+      <main class="page-content">
+        <!-- Breadcrumbs & Page title
+        <section class="text-center section-34 section-sm-60 section-md-top-100 section-md-bottom-105 bg-image bg-image-breadcrumbs">
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col-xs-12 col-xl-preffix-1 col-xl-11">
+                <p class="h3 text-white">Cart Page</p>
+                <ul class="breadcrumbs-custom offset-top-10">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Pages</a></li>
+                  <li class="active">Cart Page</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>-->
+
+        <section class="section-50 section-sm-100">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <h4 class="text-left font-default">2 productos en tu Carrito</h4>
+                <div class="table-responsive offset-top-10">
+                  <table class="table table-shopping-cart">
+                    <tbody>
+                      <tr>
+                        <td style="width: 1px">
+                          <div class="form-group stepper-type-2">
+                            <input class="form-control text-bold" type="number" data-zeros="true" value="1" min="1" max="20" readonly>
+                          </div>
+                        </td>
+                        <td style="width: 1px">
+                          <div class="inset-left-20">
+                            <div class="product-image"><img src="/images/shop-cart-1-130x130.jpg" width="130" height="130" alt=""></div>
+                          </div>
+                        </td>
+                        <td style="min-width: 340px;">
+                          <div class="inset-left-30 text-left"><span class="product-brand text-italic">Burgers</span>
+                            <div class="h5 text-sbold offset-top-0"><a class="link-default" href="shop-single.html">Mini Burger</a></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="inset-left-20"><span class="h5 text-sbold">$6.400</span></div>
+                        </td>
+                        <td>
+                          <div class="inset-left-20"><a class="icon icon-sm mdi mdi-window-close link-gray-lightest" href="#"></a></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="width: 1px">
+                          <div class="form-group stepper-type-2">
+                            <input class="form-control text-bold" type="number" data-zeros="true" value="2" min="1" max="20" readonly>
+                          </div>
+                        </td>
+                        <td style="width: 1px">
+                          <div class="inset-left-20">
+                            <div class="product-image"><img src="/images/shop-cart-2-130x130.jpg" width="130" height="130" alt=""></div>
+                          </div>
+                        </td>
+                        <td style="min-width: 340px;">
+                          <div class="inset-left-30 text-left"><span class="product-brand text-italic">Burgers</span>
+                            <div class="h5 text-sbold offset-top-0"><a class="link-default" href="shop-single.html">Classic Burger</a></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="inset-left-20"><span class="h5 text-sbold">$9.000</span></div>
+                        </td>
+                        <td>
+                          <div class="inset-left-20"><a class="icon icon-sm mdi mdi-window-close link-gray-lightest" href="#"></a></div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="offset-top-35 text-right">
+                  <form action="https://webpay3gint.transbank.cl/webpayserver/initTransaction" class="needs-validation" method="post" role="form">
+                    <input type="hidden" name="token_ws" value="<?php echo $tokenWs; ?>">
+                  <div class="h4 font-default text-bold"><small class="inset-right-5 text-gray-light">Total: </small> $15.400</div><button class="btn btn-icon btn-icon-left btn-burnt-sienna btn-shape-circle offset-top-35" href="#"><span class="icon icon-xs mdi mdi-cart-outline"></span><span>Pagar</span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
