@@ -18,7 +18,7 @@ class CartController extends ControllerBase
 
     public function indexAction()
     {
-        $response->setHeader('Cache-Control', 'max-age=0');
+        $this->response->setHeader('Cache-Control', 'max-age=0');
 
     	$transaction = (new Webpay(Configuration::forTestingWebpayPlusNormal()))
                ->getNormalTransaction();
