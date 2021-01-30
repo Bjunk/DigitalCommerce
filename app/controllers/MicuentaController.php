@@ -35,7 +35,7 @@ class MicuentaController extends ControllerBase
 
     }
 
-        public function configuracionAction()
+    public function configuracionAction()
     {
 
     	if($this->session->has("dxs_demo"))
