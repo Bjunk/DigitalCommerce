@@ -8,7 +8,7 @@
 // Controlador que maneja las interacciones de la página central
 //
 
-class LocationController extends ControllerBase
+class DondeestamosController extends ControllerBase
 {
 
     public function indexAction()
