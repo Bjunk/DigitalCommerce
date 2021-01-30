@@ -26,6 +26,25 @@ class MicuentaController extends ControllerBase
     public function mispedidosAction()
     {
 
+    	if($this->session->has("dxs_demo"))
+    	{
+
+    	} else {
+    		$this->response->redirect('/login/', true, 302);
+    	}
+
+    }
+
+        public function configuracionAction()
+    {
+
+    	if($this->session->has("dxs_demo"))
+    	{
+
+    	} else {
+    		$this->response->redirect('/login/', true, 302);
+    	}
+
     }
 
 
