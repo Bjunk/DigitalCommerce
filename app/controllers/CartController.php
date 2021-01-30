@@ -36,8 +36,8 @@ class CartController extends ControllerBase
         $buyOrder = rand;
 
         // URL Callback
-        $returnUrl = "https://dxs.cloud/cart/return/";
-        $finalUrl = "https://dxs.cloud/cart/voucher/";
+        $returnUrl = "https://demo.dxs.cloud/cart/return/";
+        $finalUrl = "https://demo.dxs.cloud/cart/voucher/";
 
         // Iniciamos la transacción
         $initResult = $transaction->initTransaction(
