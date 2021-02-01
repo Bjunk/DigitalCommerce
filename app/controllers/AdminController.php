@@ -44,4 +44,15 @@ class AdminController extends ControllerBase
 
     }
 
+    public function agregarproductoAction()
+    {
+        /* if($this->session->has("dxs_demo"))
+        {
+
+        } else {
+                $this->response->redirect('/login/', true, 302);
+        } */
+
+    }
+
 }

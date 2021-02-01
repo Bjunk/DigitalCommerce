@@ -5,8 +5,9 @@
   <source src="./notification.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+<button @click="notify()">Click me</button> 
 </div>
- <button onclick="notify()">Click me</button> 
+ 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script>
 Notification.requestPermission();
@@ -78,10 +79,14 @@ data() {
 	return {
 }
 },
-mounted(){
+computed: 
+  notify() {
 		var x = document.getElementById("myAudio"); 
-		//x.play();
-}
+		x.play();
+    var noti = new Notification('Mensaje', { body: 'text'});
+    console.log(noti);
+
+  }
 }
 )
 </script>
