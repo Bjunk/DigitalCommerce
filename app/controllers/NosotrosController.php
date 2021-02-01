@@ -8,7 +8,7 @@
 // Controlador que maneja las interacciones de la página central
 //
 
-class IndexController extends ControllerBase
+class NosotrosController extends ControllerBase
 {
 
     public function indexAction()
