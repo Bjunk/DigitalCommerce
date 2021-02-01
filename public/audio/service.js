@@ -1,4 +1,7 @@
-self.addEventListener('activate', async () => {
-  // This will be called only once when the service worker is activated.
-  console.log('service worker activate')
-})
+self.addEventListener("push", function(event) {
+  console.log("[Service Worker] Push Received.", event.data.text());
+  var options = {
+    body: "This notification was generated from a push!"
+  };
+  event.waitUntil(self.registration.showNotification("Hello world!", options));
+});
