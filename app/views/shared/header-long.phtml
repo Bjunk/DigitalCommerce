@@ -46,8 +46,8 @@
                           </li>
                           <li>
                             <ul class="list-inline list-inline-sm">
-                              <li><a class="link-silver-light" href="#"><span class="icon icon-sm-mod-1 fa fa-instagram"></span></a></li>
-                              <li><a class="link-silver-light" href="#"><span class="icon icon-sm-mod-1 fa fa-facebook"></span></a></li>
+                              <li><a class="link-silver-light" href="https://www.instagram.com/bigmamma_talagante/" target="_blank"><span class="icon icon-sm-mod-1 fa fa-instagram"></span></a></li>
+                              <li><a class="link-silver-light" href="https://web.facebook.com/bigmammatalagante" target="_blank"><span class="icon icon-sm-mod-1 fa fa-facebook"></span></a></li>
                               <li><a class="link-silver-light" href="#"><span class="icon icon-sm-mod-1 fa fa-twitter"></span></a></li>
                               <li><a class="link-silver-light" href="#"><span class="icon icon-sm-mod-1 fa fa-google-plus"></span></a></li>
                             </ul>
@@ -60,10 +60,10 @@
                 <!-- RD Navbar Nav-->
                 <div class="rd-navbar-nav-wrap">
                   <!-- RD Navbar Shop-->
-                  <div class="rd-navbar-shop"><a class="link link-shop link-default" href="/cart/"><span class="big text-gray-light">Carro</span><span class="icon icon-sm mdi mdi-cart-outline"></span><span class="label-inline big">2</span></a></div>
+                  <div class="rd-navbar-shop"><a class="link link-shop link-default" href="/cart/"><span class="big text-gray-light">Carro</span><span class="icon icon-sm mdi mdi-cart-outline"></span><span id="app" @click="Cantidad++" class="label-inline big">{{ Cantidad }}</span></a></div>
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
-                    <li class="active"><a href="/">Inicio</a>
+                    <li><a href="/">Inicio</a>
                     </li>
                     <li><a href="/micuenta/">Mi Cuenta</a>
                       <ul class="rd-navbar-dropdown rd-navbar-open-right">
@@ -74,12 +74,19 @@
                     <li><a href="/menu/">Menu</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-navbar-dropdown menu-img-wrap">
-                        <li class="menu-img"><a href="menu-single.html"><img src="/images/menu-food-01.png" alt="" width="88" height="60"><span>Pizzas</span></a></li>
-                        <li class="menu-img"><a href="menu-single.html"><img src="/images/menu-food-02.png" alt="" width="88" height="60"><span>Burgers</span></a></li>
-                        <li class="menu-img"><a href="menu-single.html"><img src="/images/menu-food-03.png" alt="" width="88" height="60"><span>Bebidas</span></a></li>
-                        <li class="menu-img"><a href="menu-single.html"><img src="/images/menu-food-04.png" alt="" width="88" height="60"><span>Sandwich</span></a></li>
-                        <li class="menu-img"><a href="menu-single.html"><img src="/images/menu-food-05.png" alt="" width="88" height="60"><span>Ensaladas</span></a></li>
-                        <li class="menu-img"><a href="menu-single.html"><img src="/images/menu-food-06.png" alt="" width="88" height="60"><span>Postres</span></a></li>
+                        <li class="menu-img"><a href="/menu/"><img src="/images/menu-food-01.png" alt="" width="88" height="60"><span>Pizzas</span></a></li>
+                        <li class="menu-img"><a href="/menu/"><img src="/images/menu-food-02.png" alt="" width="88" height="60"><span>Burgers</span></a></li>
+                        <li class="menu-img"><a href="/menu/"><img src="/images/menu-food-03.png" alt="" width="88" height="60"><span>Bebidas</span></a></li>
+                        <li class="menu-img"><a href="/menu/"><img src="/images/menu-food-04.png" alt="" width="88" height="60"><span>Sandwich</span></a></li>
+                        <li class="menu-img"><a href="/menu/"><img src="/images/menu-food-05.png" alt="" width="88" height="60"><span>Ensaladas</span></a></li>
+                        <li class="menu-img"><a href="/menu/"><img src="/images/menu-food-06.png" alt="" width="88" height="60"><span>Postres</span></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="/admin/">Administración</a>
+                      <ul class="rd-navbar-dropdown rd-navbar-open-right">
+                        <li><a href="/admin/catalogo/">Catalogo</a></li>
+                        <li><a href="/admin/pedidos/">Pedidos</a></li>
+                        <li><a href="/admin/configuracion/">Configuración</a></li>
                       </ul>
                     </li>
                     <li><a href="/nosotros/">Nosotros</a>
@@ -130,7 +137,7 @@
                           <ul class="list-marked">
                             <li><a href="menu-classic.html">Menu Classic</a></li>
                             <li><a href="menu-modern.html">Menu Modern</a></li>
-                            <li><a href="menu-single.html">Menu Single</a></li>
+                            <li><a href="/menu/">Menu Single</a></li>
                             <li><a href="shop-single.html">Product Single</a></li>
                             <li><a href="shop-cart.html">Cart page</a></li>
                           </ul>

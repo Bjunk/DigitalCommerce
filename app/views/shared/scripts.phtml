@@ -1,12 +1,23 @@
     <!-- Global Mailform Output-->
     <div class="snackbars" id="form-output-global"></div>
-    <!-- Java script-->
+    <!-- Java script -->
     <script src="/js/core.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script>
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   }
 }
+</script>
+<script>
+	var app = new Vue({
+		el: "#app",
+		data(){
+			return {
+				Cantidad: 0
+			}
+		}
+	})
 </script>
