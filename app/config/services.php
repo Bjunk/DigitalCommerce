@@ -128,7 +128,7 @@ $di->setShared('router', function () {
 /*
  * Error 404
  */
-
+/*
 $di->set(
     'dispatcher',
     function() use ($di) {
@@ -154,7 +154,7 @@ $di->set(
             		 /* $dispatcher->forward(array(
                 		'controller' => 'error',
                 		'action' => 'show500',
-			)); */
+			)); */ /*
 			return false;
 			break;
                 }
@@ -166,4 +166,4 @@ $di->set(
     },
     true
 );
-
+*/
