@@ -128,13 +128,13 @@ $di->setShared('router', function () {
 /*
  * Error 404
  */
-/*
+
 $di->set(
     'dispatcher',
     function() use ($di) {
-
+	
         $evManager = $di->getShared('eventsManager');
-
+	/*
         $evManager->attach(
             "dispatch:beforeException",
             function($event, $dispatcher, $exception)
@@ -142,28 +142,27 @@ $di->set(
                 switch ($exception->getCode()) {
                     case PhDispatcher::EXCEPTION_HANDLER_NOT_FOUND:
                     case PhDispatcher::EXCEPTION_ACTION_NOT_FOUND:
-                     /*  $dispatcher->forward(
+                       $dispatcher->forward(
                             array(
                                 'controller' => 'error',
                                 'action'     => 'show404',
                             )
-		    ); */
+		    ); 
                         return false; 
 			            break;
 		    default:
-            		 /* $dispatcher->forward(array(
+            		  $dispatcher->forward(array(
                 		'controller' => 'error',
                 		'action' => 'show500',
-			)); */ /*
+			)); 
 			return false;
 			break;
                 }
             }
-        );
+        ); */
         $dispatcher = new PhDispatcher();
         $dispatcher->setEventsManager($evManager);
         return $dispatcher;
     },
     true
 );
-*/
