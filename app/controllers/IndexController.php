@@ -8,7 +8,6 @@
 // Controlador que maneja las interacciones de la página central
 //
 
-Namespace Controllers;
 
 class IndexController extends ControllerBase
 {
