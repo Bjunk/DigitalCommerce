@@ -161,7 +161,7 @@ $di->set(
             }
         ); */
         $dispatcher = new PhDispatcher();
-        $Dispatcher->setDefaultNamespace('Controller');
+        $dispatcher->setDefaultNamespace('Controller');
         $dispatcher->setEventsManager($evManager);
         return $dispatcher;
     },
